@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins:2.286
 USER root
 RUN apt-get update && apt-get install -y rsync nano && rm -rf /var/lib/apt/lists/*
 RUN groupadd -g 412 docker && gpasswd -a jenkins docker
